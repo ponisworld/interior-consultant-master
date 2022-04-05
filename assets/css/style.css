@@ -1,0 +1,160 @@
+/*
+    ASPECTOS GENERALES
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    background-color: #181719;
+    color: #fff;
+}
+a {
+    color: #fff;
+    font-weight: 200;
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+    display: inline-block;
+}
+img {
+    max-width: 100%;
+    width:60vw;
+}
+/*
+    HOVERS DEL NAV DEL HEADER
+*/
+header a:hover {
+    border-bottom:#fff 2px solid;
+    font-weight: 600;
+}
+/*
+    HEADER
+*/
+header h1 {
+    display: inline-block;
+    font-family:'Crimson Pro', serif;
+    text-transform: uppercase;
+    border: #fff 1px solid;
+    padding: 0.3em;
+    font-size: 18px;
+}
+header {
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2em;
+}
+header ul li a {
+    margin:0 2em;
+}
+header img {
+    width:2em;
+}
+/*
+    MAIN
+*/
+.relative {position:relative;}
+.absolute {
+    position:absolute;
+    bottom:-2em;
+    right:5em;
+}
+main {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5em;
+}
+/*
+    LEFT SIDE
+*/
+#modern_i p {
+    width:50%;
+    margin-bottom: 0.5em;
+}
+#modern_i h2 {
+    font-family: 'Lora';
+    font-weight: 500;
+    margin-bottom:1em;
+}
+#modern_i a {
+    text-decoration: underline;
+}
+/*
+    RIGHT SIDE
+*/
+#card {
+    background-color: #181719;
+    border: #000 2px solid;
+    width:20vw;
+    padding: 1em;
+}
+#author {
+    margin: 0 0 0.5em 0;
+}
+#card img {
+    border-radius: 50%;
+    max-width: 3.5em;
+    margin: 0 1em 0 0.5em;
+}
+#card #author {
+    display:flex;
+    align-items: center;
+}
+#card p {
+    font-family:'Lora';
+    font-size:2em;
+}
+#card h3,#card h4 {
+    font-weight: 500;
+}
+#card h4 {
+    color:#828282;
+}
+/*
+    FOOTER
+*/
+footer {
+    color:#A9A9A9;
+    margin-top:5em;
+    text-align: center;
+}
+
+footer a {
+    color:#A9A9A9;
+}
+/*
+    MEDIA QUERIES
+*/
+@media screen and (max-width:1200px) {
+    main {
+        flex-direction: column;
+    }
+    img {
+        width:100vw;
+    }
+    #modern_i h2{
+        text-align: center;
+    }
+}
+@media screen and (max-width:1000px) {
+    #card {
+        width:40vw;
+        height: fit-content;
+        top: 10em;
+        right:1em;
+    }
+    footer {
+        margin-top:20em;
+    }
+}
+@media screen and (max-width:600px) {
+    .desktop {display:none;}
+}
+@media screen and (min-width:600px) {
+    .mobile {display:none;}
+}
