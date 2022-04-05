@@ -15,7 +15,7 @@
       type="image/x-icon"
       href="https://devchallenges.io/"
     />
-
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:ital,wght@0,700;1,500&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -31,8 +31,17 @@
   </head>
   <body>
    <header>
-     <h1>This Interior</h1>
-     <img src="assets/img/Hamburger_icon_white.svg" class="mobile">
+     <h1 id="logo">This Interior</h1>
+     <img src="assets/img/Hamburger_icon_white.svg" class="mobile" id="nav_mobile" onclick="openMenu()">
+     <nav class="mobile" id="nav_div">
+       <img src="assets/img/x-mark-xxl.png" id="cross_exit">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Collection</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
      <nav class="desktop">
        <ul>
          <li><a href="#">Home</a></li>

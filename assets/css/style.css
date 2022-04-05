@@ -53,6 +53,7 @@ header ul li a {
 }
 header img {
     width:2em;
+    cursor:pointer;
 }
 /*
     MAIN
@@ -126,6 +127,33 @@ footer {
 
 footer a {
     color:#A9A9A9;
+}
+img + nav {
+    display:none;
+}
+
+.menu {
+    display:block;
+    width: 99vw;
+    height: 99vh;
+    background-color: #181719;
+    text-align: center;
+    clip-path: circle(200% at 100% 0);
+    transition: all 500ms ease-in-out;
+}
+.menu ul {
+    display:flex;
+    flex-direction: column;
+}
+.menu li {
+    display:block;
+    margin-bottom:5em;
+    margin-top: 5em;
+}
+.menu img {
+    position:absolute;
+    top:2em;
+    right:2em;
 }
 /*
     MEDIA QUERIES
